@@ -1,5 +1,5 @@
 //section - JavaScript Arrays
-
+//NOTE - arrays are zero based index
 //NOTE - Arrays are a special type of object that can access through numbers from zero up to N-1
 let arr = []
 
@@ -66,3 +66,4 @@ else {
     console.log(temp + " is an odd number")
 }
 }
+
