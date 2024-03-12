@@ -26,4 +26,5 @@ if(sum % 2 == 0) {
     }
 }
     console.log(checkArraySum([0, 2, 5]))//NOTE - this function allows any num to be entered <---- and spits out result from if or else
+    
 
