@@ -49,8 +49,48 @@ return sumTotal                                     // =18
 }
 
 
-console.log(sumMinArrays([
+/*console.log(sumMinArrays([
     [1,2,3,4,5],
     [6,7,8,9,10],
     [11,12,13,14]
-]))
+]))*/
+
+//ES6 version
+const sumMinArraysNew = arr => arr.reduce((a,b) => a + Math.min(...b),0)
+// . . . is called a spread operator and reduce 
+
+/*console.log(sumMinArraysNew([
+    [1,2,3,4,5],
+    [6,7,8,9,10],
+    [11,12,13,14]
+]))*/
+
+
+
+// create a function that takes an array, return duplicate numbers in new array.
+//EX: ArrayDuplicateNumbers ([1,2,3,4,5,6,5,1]) output -> [5,1]
+
+/*function ArraysDuplicateNumbers(arr) {
+
+    let duplicateNumber []
+    for()
+}
+Below is the ES6 version
+*/
+const ArraysDuplicateNumbers = arr => (
+    arr = [...new Set([...arr.filter(num => // 
+        arr.indexOf(num) !== arr.lastIndexOf(num)
+)])].sort((a,b) => a-b), // key to unlocking ES5
+    arr.length ? arr: null
+)
+
+console.log(ArraysDuplicateNumbers([1,2,3,4,3,6,1]))
+
+// Below is the ES5 version
+
+function ArrayDuplicateNumbers(arr) {
+    let duplicateNumber = [];
+    
+    for(let i = 0; i<ArrayDuplicateNumbers.length; i++)
+    
+}
