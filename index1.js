@@ -1,7 +1,7 @@
 // Create a function that takes an array of stringafied numbers as a parameter and return an array of numbers
 //Ex: ["1", "3", "6.7"] -> [1, 3, 6.7]
 
-let arrayToNumbers = arr => arr.map (e => +e)
+/*let arrayToNumbers = arr => arr.map (e => +e)
 
 console.log(arrayToNumbers(["1", "3", "6.7"]))
 
@@ -39,7 +39,7 @@ console.log(checkParam(5))
     return value
 }
 
-console.log(checkParam(5,1,3,1)) FUCKED*/
+console.log(checkParam(5,1,3,1)) FUCKED
 
 //ES5
 function checkParamThree(param1, param2, param3, param4) {
@@ -68,7 +68,18 @@ function checkArrayTwo (arr, num) {
     if(arr.includes(num)) {
         return true
      /*else
-    return false*/
+    return false
+    }
+
+console.log(checkArrayTwo([5,5,6], 7))*/
+
+function checkArrayThree(arr, x) {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] == x ) {
+            return true
+        }
+    }
+    return false
 }
 
-console.log(checkArrayTwo([5,5,6], 7))
+console.log(checkArrayThree([5,5,6],[]))

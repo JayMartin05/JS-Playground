@@ -109,3 +109,56 @@ const getDays = (date1, date2) => {
 console.log(getDays(
     new Date("March 26 2024"),
     new Date("March 30 2024")))
+
+
+
+
+    // 23-05-2024
+
+    // write a function that counts int numbers of digits
+//intCount(303) -> 3
+// intCount(1503) -> 4
+
+const countDigits = (int) => {
+    return (int.toString()).length
+}
+// number of numbers in a given number
+// negative numbers
+
+/*
+transform each number into a + number, turn that number into a string
+split and count the array length to return the number of numbers
+*/
+
+// 1- Find the absolute value of number passed in the function and set that to variable.
+// 2- Turn the number into string.
+// 3- Return the length of numbers. 
+
+function intCount(n) {
+    let positive = Math.abs(n)
+    let numString = positive.toString
+    return numString.length
+}
+
+const digiCount = (n) => {
+    if(Number.isInteger(n)) {
+    if(n > 0) {
+        let digits = 1
+        while(n > 10) {
+            digits++
+            n/= 10
+        }
+        return digits
+    } else if (n < 0) {
+        let digits = 1
+        while(n < -10) {
+            digits++
+            n/= 10
+        }
+        return digits
+    } else {
+        return 1
+    }
+    }
+}
+console.log(intCount(654816))
