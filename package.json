@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.5",
+    "express": "^4.19.2"
+  }
 }

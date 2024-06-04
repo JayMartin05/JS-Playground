@@ -122,6 +122,7 @@ console.log(getDays(
 const countDigits = (int) => {
     return (int.toString()).length
 }
+
 // number of numbers in a given number
 // negative numbers
 
@@ -162,3 +163,48 @@ const digiCount = (n) => {
     }
 }
 console.log(intCount(654816))
+
+/* 
+1- Create a function that takes an array of int as an argument and returns the same array
+in ascending order using sort() method.
+2- You have to sort the array creating ES5 own algorithum 
+*/
+
+const numArray = [8,5,6,7,1,2,8,6,9,3];
+numArray.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(numArray);
+
+
+// Write a function to rotate an array either left or right 
+// according to a number provided in the function
+
+/*
+SampleArray([0,1,2,3,4,5,6,7], 2) -> [6,7,0,1,2,3,4,5]
+*/
+
+/*const arr = [0,1,2,3,4,5,6,7,8,9];
+const flip = arr.reverse(2);
+console.log(flip)*/ // no worky
+
+function rotateArray(arr, num) {
+    let result = arr
+    for(let i = 0; i<num; i++) {
+        let firstNumber = arr.pop()
+        arr.unshift(firstNumber)
+        result = arr
+    }
+    return result
+}
+
+console.log(rotateArray([1,2,3,4,5,6],4))
+
+
+// Create a function that takes an array of values, removes all duplicate values and return a new
+// array in the same order as the old array (only strings and numbers)
+
+const removeDupes = [1,1,2,3,3,4,5,5,6,7,7,8,9,9];
+const uniqueSet = new Set(removeDupes);
+const 
